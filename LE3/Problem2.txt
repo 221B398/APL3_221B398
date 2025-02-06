@@ -1,0 +1,32 @@
+interface Testable
+{
+    void display();
+}
+
+
+class Test implements Testable
+{
+   public void display(){
+    System.out.println("display method in test class");
+}
+
+public static void main(String[] args)
+{
+    Test t=new Test();
+    t.display();
+}
+}
+abstract class AbsTest implements Testable{
+    
+}
+
+class ConcreteAbsTest extends AbsTest{
+    public void display(){
+    System.out.println("Display method in concreate class");
+}
+public static void main(String[]args)
+{
+    ConcreteAbsTest cat = new ConcreteAbsTest();
+    cat.display();
+}
+}
